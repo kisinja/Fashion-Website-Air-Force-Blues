@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.links {
+    @apply text-sm cursor-pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection{
+    background-color: red;
+    color: white;
+}
