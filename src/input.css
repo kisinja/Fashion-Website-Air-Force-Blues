@@ -4,11 +4,23 @@
     @apply text-sm cursor-pointer;
 }
 
+li {
+    @apply capitalize;
+}
+
+input {
+    @apply p-2 border border-gray-200 rounded
+}
+
+label {
+    @apply block text-gray-600 mb-2;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
-::selection{
+::selection {
     background-color: red;
     color: white;
 }

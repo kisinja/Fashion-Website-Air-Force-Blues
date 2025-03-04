@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomePage</title>
     <link rel="stylesheet" href="output.css">
 
     <!-- Font Awesome -->
@@ -32,15 +32,15 @@
             </ul>
 
             <div class="flex gap-4">
-                <i class="fa-solid fa-user bg-white rounded-full cursor-pointer"></i>
-                <i class="fa-solid fa-shopping-cart bg-white rounded-full cursor-pointer"></i>
+                <a href="login.html" target="_blank"
+                    class="inline-block bg-black text-white py-2 px-5 rounded-full">Sign In</a>
             </div>
         </div>
     </nav>
 
     <!-- Section two -->
-    <section class="px-4 flex gap-6 items-center">
-        <div class="flex w-[60%] gap-8 items-center">
+    <section class="px-4 flex flex-col md:flex-row  gap-2 md:gap-6 md:items-center">
+        <div class="flex w-full sm:w-[60%] gap-8 items-center">
             <div class="flex-1 relative">
                 <input type="text" class="w-full bg-white rounded-full py-2 px-6 placeholder:text-black"
                     placeholder="Search Cloth">
@@ -145,12 +145,144 @@
 
 
         <!-- right side with image -->
-         <div class="w-full md:w-1/2 bg-gray-100 rounded-lg">
-            <img class="w-full h-full object-cover object-center " src="https://img.freepik.com/free-photo/close-up-young-female-with-skateboard_23-2148436087.jpg?t=st=1741010947~exp=1741014547~hmac=fc521d51d1a13c29b0a7db32749e3d1ade63fb2347cae0687efe164e084d8fc9&w=740" alt="">
+        <div class="w-full md:w-1/2 bg-gray-100 rounded-lg">
+            <img class="w-full h-full object-cover object-center "
+                src="https://img.freepik.com/free-photo/close-up-young-female-with-skateboard_23-2148436087.jpg?t=st=1741010947~exp=1741014547~hmac=fc521d51d1a13c29b0a7db32749e3d1ade63fb2347cae0687efe164e084d8fc9&w=740"
+                alt="">
 
-         </div>
+        </div>
     </section>
 
+    <!-- Section three -->
+    <section class="px-4 w-full mb-4 flex flex-col sm:flex-row gap-3">
+
+        <div class="h-80 w-full sm:w-1/3">
+            <img src="https://i.pinimg.com/474x/ce/cf/a7/cecfa7635cb1fcf36fc5e9e71ceae022.jpg" alt=""
+                class="w-full h-full object-cover rounded-2xl ">
+        </div>
+        <div class="h-80 w-full sm:w-1/3">
+            <img src="https://i.pinimg.com/474x/f1/71/4a/f1714ab21265829bc3c0084cbf754bc6.jpg" alt=""
+                class="w-full h-full object-cover rounded-2xl ">
+        </div>
+        <div class="bg-white rounded-2xl flex flex-col gap-12 items-center w-full sm:w-1/3 h-80 justify-center">
+            <p class="font-semibold text-4xl text-gray-800 text-center">Models Wearing<br>full Outfits
+
+            </p>
+            <button class="bg-black text-white rounded-full py-2 px-4">Explore More </button>
+        </div>
+
+
+
+    </section>
+
+    <section class="px-4 my-6">
+        <!--Featured collection section-->
+
+        <div class="mt-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Our featured collection</h2>
+            <p class="text-gray-600 mt-2">Recently added shirts</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mt-6">
+
+                <div
+                    class="w-full  sm:w-1/3 h-80 rounded-2xl bg-[url(https://i.pinimg.com/474x/3c/61/54/3c615447df95894fc3bba629613231ce.jpg)] bg-cover bg-center relative">
+
+                    <div
+                        class=" bg-black/30 px-4 py-2 absolute bottom-0 flex justify-between items-center left-0 right-0 rounded-b-2xl">
+                        <p class="text-xl text-white">Top Pants <br> Series</p>
+
+                        <button class="bg-white rounded-full shadow w-12 h-12 flex items-center justify-center">
+                            <img src="https://www.svgrepo.com/show/509306/arrow-top-right.svg" alt="" class="w-6 h-6">
+                        </button>
+                    </div>
+
+                </div>
+                <div
+                    class="w-full  sm:w-1/3 h-80 rounded-t-2xl bg-[url(https://i.pinimg.com/474x/49/73/f6/4973f6076bb338d89aaec4676af453e4.jpg)] bg-cover bg-center">
+
+                </div>
+
+
+                <div
+                    class="w-full  sm:w-1/3 h-80 rounded-2xl bg-[url(https://i.pinimg.com/474x/34/20/2b/34202b64c32cbea2d3808a9f36f3ae57.jpg)] bg-cover bg-center relative">
+                    <div
+                        class=" bg-black/30 px-4 py-2 absolute bottom-0 flex justify-between items-center left-0 right-0 rounded-b-2xl">
+                        <p class="text-xl text-white">Winter Collection <br> Series</p>
+
+                        <button class="bg-white rounded-full shadow w-12 h-12 flex items-center justify-center">
+                            <img src="https://www.svgrepo.com/show/509306/arrow-top-right.svg" alt="" class="w-6 h-6">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!--foooter-->
+    <footer class="flex  flex-col divide-y-2 divide-gray-300 px-4  w-full">
+        <div class="flex flex-col md:flex-row justify-between pb-4 gap-5 md:gap-0">
+            <div class="flex flex-col gap-3">
+                <h1 class="font-bold text-lg">STYLEHIVE</h1>
+                <p class="capitalize text-gray-600 text-sm">seamless transactions,personalized <br>insights and
+                    innovative solutions for a <br> smarter tomorrow.</p>
+                <div class="flex gap-3">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h1 class="font-semibold">About</h1>
+                <ul class="text-sm text-gray-600 flex flex-col gap-2">
+                    <li>company</li>
+                    <li>Leadership</li>
+                    <li>Press</li>
+                    <li>Carrers</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h1 class="font-semibold">Help</h1>
+                <ul class="text-sm text-gray-600 flex flex-col gap-2">
+                    <li>help center</li>
+                    <li>support team</li>
+                    <li>community</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h1 class="font-semibold">Menu</h1>
+                <ul class="text-sm text-gray-600 flex flex-col gap-2">
+                    <li>menu</li>
+                    <li>women</li>
+                    <li>childern</li>
+                    <li>popular</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h1 class="font-semibold">Company</h1>
+                <ul class="text-sm text-gray-600 flex flex-col gap-2">
+                    <li>About Treadly</li>
+                    <li>contact</li>
+                    <li>News&Bolgs</li>
+                    <li>Carrers</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="flex justify-between w-full pt-4">
+            <small class="text-gray-500 capitalize">Copyright &copy;2025 Treadly all rights Reseverd. </small>
+            <small class="text-gray-500">Privacy Policy</small>
+        </div>
+
+    </footer>
 
 
 </body>
