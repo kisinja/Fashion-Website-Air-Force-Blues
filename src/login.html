@@ -12,15 +12,17 @@
 </head>
 
 <body>
-    <nav class="py-6 px-4 flex gap-8 items-center w-full justify-center">
+    <nav class="py-6 px-4 flex gap-8 items-center w-full justify-center z-50">
         <div class="w-full flex items-center md:w-1/2 justify-between flex-row-reverse md:flex-row">
             <div>
                 <i class="fa-solid fa-bars cursor-pointer"></i>
             </div>
 
-            <div class="font-semibold text-xl">
-                STYLEHIVE
-            </div>
+            <a href="index.html">
+                <div class="font-semibold text-xl">
+                    STYLEHIVE
+                </div>
+            </a>
         </div>
 
         <div class="hidden md:flex items-center w-[50%] justify-end gap-12 ">
@@ -37,49 +39,50 @@
     </nav>
 
     <!-- Form Section -->
-    <section class="w-full min-h-screen flex items-center justify-center bg-blue-50 px-12 h-[600px] py-14">
+    <section class="w-full min-h-screen flex items-center justify-center bg-blue-50 px-12 md:h-[600px] py-14">
 
-        <div class="w-1/2 h-full">
-            <img src="https://images.unsplash.com/photo-1596993100471-c3905dafa78e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbiUyMHdlZWt8ZW58MHx8MHx8fDA%3D" alt=""
-                class="w-full h-full object-cover object-center rounded-l-2xl">
+        <div class="hidden md:block w-1/2 h-full">
+            <img src="https://images.unsplash.com/photo-1596993100471-c3905dafa78e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbiUyMHdlZWt8ZW58MHx8MHx8fDA%3D"
+                alt="" class="w-full h-full object-cover object-center rounded-l-2xl">
         </div>
 
-        <form class="w-1/2 max-w-[60%] bg-white py-8 px-12 shadow-lg rounded-r-2xl h-full">
+        <form
+            class="w-full  md:w-1/2 md:max-w-[60%] bg-white py-8 px-12 shadow-lg md:rounded-r-2xl h-fit md:h-full rounded-2xl">
 
             <h1 class="font-bold text-black text-xl text-center mb-2">Login</h1>
 
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="mb-3">
                     <label for="fName">First Name</label>
-                    <input type="text" name="fName" id="fName" required>
+                    <input type="text" name="fName" id="fName" required class="w-full">
                 </div>
                 <div class="mb-3">
                     <label for="lName">Last Name</label>
-                    <input type="text" name="lName" id="lName" required>
+                    <input type="text" name="lName" id="lName" required class="w-full">
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required class="w-full">
                 </div>
                 <div class="mb-3">
                     <label for="tel">Phone Number</label>
-                    <input type="tel" name="tel" id="tel" required>
+                    <input type="tel" name="tel" id="tel" required class="w-full">
                 </div>
             </div>
             <div class="mb-3 col-span-2 w-full">
                 <label for="address">Address</label>
                 <input type="text" name="address" id="address" class="w-full" required>
             </div>
-            <div class="grid grid-cols-2 gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="mb-3">
                     <label for="Password">Password</label>
-                    <input type="password" name="Password" id="Password" required>
+                    <input type="password" name="Password" id="Password" required class="w-full">
                 </div>
                 <div class="mb-3">
                     <label for="ConfirmPassword">Confirm Password</label>
-                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" required>
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" required class="w-full">
                 </div>
             </div>
 
